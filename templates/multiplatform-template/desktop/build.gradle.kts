@@ -22,7 +22,6 @@ kotlin {
 
 compose.desktop {
     application {
-        jvmArgs += listOf("-Xmx10M")
         mainClass = "MainKt"
 
         nativeDistributions {
