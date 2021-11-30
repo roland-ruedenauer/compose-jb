@@ -2,7 +2,6 @@ object Deps {
 
     object JetBrains {
         object Kotlin {
-            // __KOTLIN_COMPOSE_VERSION__
             private const val VERSION = "1.5.31"
             const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$VERSION"
             const val testCommon = "org.jetbrains.kotlin:kotlin-test-common:$VERSION"
@@ -12,9 +11,7 @@ object Deps {
         }
 
         object Compose {
-            // __LATEST_COMPOSE_RELEASE_VERSION__
-            private const val VERSION = "1.0.0-beta5"
-            const val gradlePlugin = "org.jetbrains.compose:compose-gradle-plugin:$VERSION"
+            const val gradlePlugin = "org.jetbrains.compose:compose-gradle-plugin:1.0.0-rc6"
         }
     }
 
