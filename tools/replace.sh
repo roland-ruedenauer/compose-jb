@@ -10,6 +10,7 @@ declare -a files=(
   "templates/multiplatform-template/build.gradle.kts"
   "examples/codeviewer/build.gradle.kts"
   "examples/falling-balls/build.gradle.kts"
+  "examples/falling-balls-web/build.gradle.kts"
   "examples/imageviewer/build.gradle.kts"
   "examples/intellij-plugin/build.gradle.kts"
   "examples/issues/build.gradle.kts"
@@ -28,7 +29,7 @@ declare -a files=(
 
 
 if [ -z "$@" ]; then
-echo "Specify Compose version. For example: ./replaceVersion 1.0.0-rc6"
+echo "Specify Compose version. For example: ./replace.sh 1.0.0-rc6"
 exit 1
 fi
 COMPOSE_VERSION=$@
